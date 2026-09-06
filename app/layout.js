@@ -16,8 +16,8 @@ const merriweather = Merriweather({
   display: 'swap',
 });
 
-const PIXEL_ID = '2957388577925898';
-const PIXEL_ID_2 = '1270209555097956';
+const PIXEL_CLIENTE = '2591327077982060';
+const PIXEL_GERAL_EMPRESTIMO = '1270209555097956';
 
 export const metadata = {
   title: 'Fale com um Especialista | Atendimento via WhatsApp',
@@ -56,10 +56,10 @@ export default function RootLayout({ children }) {
   t.src=v;s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s)
 }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('set','autoConfig',false,'${PIXEL_ID}');
-fbq('init','${PIXEL_ID}');
-fbq('set','autoConfig',false,'${PIXEL_ID_2}');
-fbq('init','${PIXEL_ID_2}');
+fbq('set','autoConfig',false,'${PIXEL_CLIENTE}');
+fbq('init','${PIXEL_CLIENTE}');
+fbq('set','autoConfig',false,'${PIXEL_GERAL_EMPRESTIMO}');
+fbq('init','${PIXEL_GERAL_EMPRESTIMO}');
 fbq('track','PageView');
             `,
           }}
@@ -69,14 +69,14 @@ fbq('track','PageView');
             height="1"
             width="1"
             style={{ display: 'none' }}
-            src={`https://www.facebook.com/tr?id=${PIXEL_ID}&ev=PageView&noscript=1`}
+            src={`https://www.facebook.com/tr?id=${PIXEL_CLIENTE}&ev=PageView&noscript=1`}
             alt=""
           />
           <img
             height="1"
             width="1"
             style={{ display: 'none' }}
-            src={`https://www.facebook.com/tr?id=${PIXEL_ID_2}&ev=PageView&noscript=1`}
+            src={`https://www.facebook.com/tr?id=${PIXEL_GERAL_EMPRESTIMO}&ev=PageView&noscript=1`}
             alt=""
           />
         </noscript>

@@ -9,7 +9,7 @@ export default function Page() {
   const tracking = useTracking();
   const { buildLink } = useWhatsApp();
 
-  const nomeEmpresa = 'XINA-ESPIRITO-SANTO'; // Fixo e oculto
+  const nomeEmpresa = 'KAYQ-GOIAS'; // Fixo e oculto
   const [nome, setNome] = useState('');
   const [telefone, setTelefone] = useState('');
   const [email, setEmail] = useState('');
